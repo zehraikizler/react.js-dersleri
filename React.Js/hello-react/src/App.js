@@ -1,12 +1,14 @@
 import './App.css';
-
+import {useState} from "react";
 // import Header from './Components/ders-01/Header';
 // import Components from './Components/ders-01/Components';
 // import User from "./Components/ders-02/User";
-import State from "./Components/ders-03/State";
-import Counter from "./Components/ders-03/Counter";
-import InputExample from "./Components/ders-03/InputExample";
-import Inputs from "./Components/ders-03/Inputs";
+// import State from "./Components/ders-03/State";
+// import Counter from "./Components/ders-03/Counter";
+// import InputExample from "./Components/ders-03/InputExample";
+// import Inputs from "./Components/ders-03/Inputs";
+// import Lifecycle from "./Components/ders-04/Lifecycle";
+import Unmount from "./Components/ders-04/Unmount";
 
 /*const friendsName = [
   {
@@ -28,6 +30,9 @@ import Inputs from "./Components/ders-03/Inputs";
 ];*/
 
 function App() {
+
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <div>
       
@@ -55,10 +60,16 @@ function App() {
       */}
 
         {/* ders-03 */}
-        <State />
+        {/* <State />
         <Counter />
         <InputExample />
-        <Inputs />
+        <Inputs /> */}
+
+        {/* ders-04 */}
+        {/* <Lifecycle /> */}
+
+        {isVisible && <Unmount />}      
+        <button onClick={() => setIsVisible(!isVisible)}>Toggle Counter</button>
 
     </div>
   );
