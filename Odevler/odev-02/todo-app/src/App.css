@@ -1,0 +1,19 @@
+body {
+  background-color: bisque;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.list-group {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.list-group::-webkit-scrollbar {
+  display: none;
+}
