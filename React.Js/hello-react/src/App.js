@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from "react";
+// import {useState} from "react";
 // import Header from './Components/ders-01/Header';
 // import Components from './Components/ders-01/Components';
 // import User from "./Components/ders-02/User";
@@ -8,7 +8,10 @@ import {useState} from "react";
 // import InputExample from "./Components/ders-03/InputExample";
 // import Inputs from "./Components/ders-03/Inputs";
 // import Lifecycle from "./Components/ders-04/Lifecycle";
-import Unmount from "./Components/ders-04/Unmount";
+// import Unmount from "./Components/ders-04/Unmount";
+import UseStyle from "./Components/ders-05/UseStyle/stil";
+import FirstStil from "./Components/ders-05/FirstStil/stil";
+import SecondStil from "./Components/ders-05/SecondStil/stil";
 
 /*const friendsName = [
   {
@@ -31,7 +34,7 @@ import Unmount from "./Components/ders-04/Unmount";
 
 function App() {
 
-  const [isVisible, setIsVisible] = useState(true);
+  // const [isVisible, setIsVisible] = useState(true);
 
   return (
     <div>
@@ -68,8 +71,14 @@ function App() {
         {/* ders-04 */}
         {/* <Lifecycle /> */}
 
-        {isVisible && <Unmount />}      
-        <button onClick={() => setIsVisible(!isVisible)}>Toggle Counter</button>
+        {/* {isVisible && <Unmount />}      
+        <button onClick={() => setIsVisible(!isVisible)}>Toggle Counter</button> */}
+
+        {/* ders-05 */}
+        
+        <UseStyle />
+        <FirstStil />
+        <SecondStil />
 
     </div>
   );
