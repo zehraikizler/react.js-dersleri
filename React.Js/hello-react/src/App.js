@@ -9,9 +9,10 @@ import './App.css';
 // import Inputs from "./Components/ders-03/Inputs";
 // import Lifecycle from "./Components/ders-04/Lifecycle";
 // import Unmount from "./Components/ders-04/Unmount";
-import UseStyle from "./Components/ders-05/UseStyle/stil";
-import FirstStil from "./Components/ders-05/FirstStil/stil";
-import SecondStil from "./Components/ders-05/SecondStil/stil";
+// import UseStyle from "./Components/ders-05/UseStyle/stil";
+// import FirstStil from "./Components/ders-05/FirstStil/stil";
+// import SecondStil from "./Components/ders-05/SecondStil/stil";
+import Fetching from "./Components/ders-06/Fetching";
 
 /*const friendsName = [
   {
@@ -76,9 +77,13 @@ function App() {
 
         {/* ders-05 */}
         
-        <UseStyle />
+        {/* <UseStyle />
         <FirstStil />
-        <SecondStil />
+        <SecondStil /> */}
+
+        {/* ders-06 */}
+
+        <Fetching />
 
     </div>
   );
