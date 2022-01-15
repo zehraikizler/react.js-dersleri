@@ -3,13 +3,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 import Home from "./components/Home";
 import About from "./components/About";
 import Users from "./components/Users";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
@@ -18,23 +19,38 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                activeStyle={{ backgroundColor: "black", color: "white" }}
+                exact
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink
+                activeStyle={{ backgroundColor: "black", color: "white" }}
+                to="/about"
+              >
+                About
+              </NavLink>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <NavLink
+                activeStyle={{ backgroundColor: "black", color: "white" }}
+                to="/users"
+              >
+                Users
+              </NavLink>
             </li>
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/users" component={Users} />
+          <Route path="*" component={Error404} />
         </Switch>
       </div>
     </Router>
