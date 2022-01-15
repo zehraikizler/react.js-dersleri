@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 // import {useState} from "react";
 // import Header from './Components/ders-01/Header';
 // import Components from './Components/ders-01/Components';
@@ -12,7 +12,8 @@ import './App.css';
 // import UseStyle from "./Components/ders-05/UseStyle/stil";
 // import FirstStil from "./Components/ders-05/FirstStil/stil";
 // import SecondStil from "./Components/ders-05/SecondStil/stil";
-import Fetching from "./Components/ders-06/Fetching";
+// import Fetching from "./Components/ders-06/Fetching";
+import FormManagemant from "./Components/ders-07/FormManagemant";
 
 /*const friendsName = [
   {
@@ -34,12 +35,10 @@ import Fetching from "./Components/ders-06/Fetching";
 ];*/
 
 function App() {
-
   // const [isVisible, setIsVisible] = useState(true);
 
   return (
     <div>
-      
       {/* ders-01 */}
       {/*
         <Header />
@@ -63,28 +62,31 @@ function App() {
         />
       */}
 
-        {/* ders-03 */}
-        {/* <State />
+      {/* ders-03 */}
+      {/* <State />
         <Counter />
         <InputExample />
         <Inputs /> */}
 
-        {/* ders-04 */}
-        {/* <Lifecycle /> */}
+      {/* ders-04 */}
+      {/* <Lifecycle /> */}
 
-        {/* {isVisible && <Unmount />}      
+      {/* {isVisible && <Unmount />}      
         <button onClick={() => setIsVisible(!isVisible)}>Toggle Counter</button> */}
 
-        {/* ders-05 */}
-        
-        {/* <UseStyle />
+      {/* ders-05 */}
+
+      {/* <UseStyle />
         <FirstStil />
         <SecondStil /> */}
 
-        {/* ders-06 */}
+      {/* ders-06 */}
+      
+      {/* <Fetching /> */}
 
-        <Fetching />
+      {/* ders-07 */}
 
+      <FormManagemant />
     </div>
   );
 }
