@@ -13,7 +13,8 @@ import "./App.css";
 // import FirstStil from "./Components/ders-05/FirstStil/stil";
 // import SecondStil from "./Components/ders-05/SecondStil/stil";
 // import Fetching from "./Components/ders-06/Fetching";
-import FormManagemant from "./Components/ders-07/FormManagemant";
+// import FormManagemant from "./Components/ders-07/FormManagemant";
+import SignUp from "./Components/ders-07/SignUp";
 
 /*const friendsName = [
   {
@@ -81,12 +82,13 @@ function App() {
         <SecondStil /> */}
 
       {/* ders-06 */}
-      
+
       {/* <Fetching /> */}
 
       {/* ders-07 */}
 
-      <FormManagemant />
+      {/* <FormManagemant /> */}
+      <SignUp />
     </div>
   );
 }
