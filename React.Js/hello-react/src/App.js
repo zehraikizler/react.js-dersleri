@@ -1,5 +1,5 @@
 import "./App.css";
-import {useState} from "react";
+import { useState, useMemo } from "react";
 // import Header from './Components/ders-01/Header';
 // import Components from './Components/ders-01/Components';
 // import User from "./Components/ders-02/User";
@@ -36,9 +36,21 @@ import Header from "./Components/ders-08/Header";
   },
 ];*/
 
+function calculateObject(number){
+  console.log("calculating...")
+  for(let i=0; i<100000000; i++){}
+  console.log("calculating object!")
+  return {name: "Zehra", number}
+}
+
 function App() {
   // const [isVisible, setIsVisible] = useState(true);
   const [number, setNumber] = useState(0);
+  const [text, setText] = useState("");
+  const data = useMemo(() => {
+    return calculateObject(number)
+  }, [number]);
+  // const data = calculateObject();
 
   return (
     <div>
@@ -47,7 +59,6 @@ function App() {
         <Header />
         <Components />
       */}
-
       {/* ders-02 */}
       {/*
         <User 
@@ -73,30 +84,28 @@ function App() {
 
       {/* ders-04 */}
       {/* <Lifecycle /> */}
-
       {/* {isVisible && <Unmount />}      
         <button onClick={() => setIsVisible(!isVisible)}>Toggle Counter</button> */}
 
       {/* ders-05 */}
-
       {/* <UseStyle />
         <FirstStil />
         <SecondStil /> */}
 
       {/* ders-06 */}
-
       {/* <Fetching /> */}
 
       {/* ders-07 */}
-
       {/* <FormManagemant /> 
           <SignUp /> */}
 
       {/* ders-08 */}
-        
-      <Header number={number < 5 ? 0 : number} /> <hr />
+      <Header number={number < 5 ? 0 : number} data={data} /> 
+      <hr />
       <div>{number}</div>
-       <button onClick={() => setNumber(number + 1)} >increase</button>
+      <button onClick={() => setNumber(number + 1)}>increase</button>
+      <br /> <br />
+      <input value={text} onChange={({target}) => setText(target.value)} />
 
     </div>
   );
