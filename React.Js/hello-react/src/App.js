@@ -17,8 +17,7 @@ import "./App.css";
 // import SignUp from "./Components/ders-07/SignUp";
 // import Header from "./Components/ders-08/Header";
 import {ThemeProvider} from "./Context/ThemeContext";
-import Button from "./Components/ders-09/Button";
-import Header from "./Components/ders-09/Header";
+import Container from "./Components/ders-09/Container";
 
 /*const friendsName = [
   {
@@ -113,8 +112,7 @@ function App() {
       {/* ders-09 */}
 
       <ThemeProvider>
-        <Button />
-        <Header />
+        <Container />
       </ThemeProvider>
 
     </div>

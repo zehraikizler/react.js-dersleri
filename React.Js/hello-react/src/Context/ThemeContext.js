@@ -4,7 +4,7 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
 
-    const [theme, setTheme] = useState('Dark');
+    const [theme, setTheme] = useState('dark');
 
     const values = {
         theme,

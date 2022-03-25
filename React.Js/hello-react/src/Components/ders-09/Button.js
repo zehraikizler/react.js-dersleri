@@ -10,7 +10,7 @@ export default function Button() {
         <h3>Button</h3>
         Active Theme: {theme} 
         <br/>
-        <button onClick={() => setTheme(theme === "Light" ? "Dark" : "Light")}>Change Theme</button>
+        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>Change Theme</button>
     </div>
   )
 }
