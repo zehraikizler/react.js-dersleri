@@ -16,8 +16,9 @@ import "./App.css";
 // import FormManagemant from "./Components/ders-07/FormManagemant";
 // import SignUp from "./Components/ders-07/SignUp";
 // import Header from "./Components/ders-08/Header";
-import ThemeContext from "./Context/ThemeContext";
+import {ThemeProvider} from "./Context/ThemeContext";
 import Button from "./Components/ders-09/Button";
+import Header from "./Components/ders-09/Header";
 
 /*const friendsName = [
   {
@@ -111,9 +112,10 @@ function App() {
 
       {/* ders-09 */}
 
-      <ThemeContext.Provider value="dark">
+      <ThemeProvider>
         <Button />
-      </ThemeContext.Provider>
+        <Header />
+      </ThemeProvider>
 
     </div>
   );
