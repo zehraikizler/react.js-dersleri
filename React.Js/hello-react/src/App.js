@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useMemo } from "react";
+// import { useState, useMemo } from "react";
 // import Header from './Components/ders-01/Header';
 // import Components from './Components/ders-01/Components';
 // import User from "./Components/ders-02/User";
@@ -15,7 +15,9 @@ import { useState, useMemo } from "react";
 // import Fetching from "./Components/ders-06/Fetching";
 // import FormManagemant from "./Components/ders-07/FormManagemant";
 // import SignUp from "./Components/ders-07/SignUp";
-import Header from "./Components/ders-08/Header";
+// import Header from "./Components/ders-08/Header";
+import ThemeContext from "./Context/ThemeContext";
+import Button from "./Components/ders-09/Button";
 
 /*const friendsName = [
   {
@@ -36,20 +38,20 @@ import Header from "./Components/ders-08/Header";
   },
 ];*/
 
-function calculateObject(number){
-  console.log("calculating...")
-  for(let i=0; i<100000000; i++){}
-  console.log("calculating object!")
-  return {name: "Zehra", number}
-}
+// function calculateObject(number){
+//   console.log("calculating...")
+//   for(let i=0; i<100000000; i++){}
+//   console.log("calculating object!")
+//   return {name: "Zehra", number}
+// }
 
 function App() {
   // const [isVisible, setIsVisible] = useState(true);
-  const [number, setNumber] = useState(0);
-  const [text, setText] = useState("");
-  const data = useMemo(() => {
-    return calculateObject(number)
-  }, [number]);
+  // const [number, setNumber] = useState(0);
+  // const [text, setText] = useState("");
+  // const data = useMemo(() => {
+  //   return calculateObject(number)
+  // }, [number]);
   // const data = calculateObject();
 
   return (
@@ -100,12 +102,18 @@ function App() {
           <SignUp /> */}
 
       {/* ders-08 */}
-      <Header number={number < 5 ? 0 : number} data={data} /> 
+      {/* <Header number={number < 5 ? 0 : number} data={data} /> 
       <hr />
       <div>{number}</div>
       <button onClick={() => setNumber(number + 1)}>increase</button>
       <br /> <br />
-      <input value={text} onChange={({target}) => setText(target.value)} />
+      <input value={text} onChange={({target}) => setText(target.value)} /> */}
+
+      {/* ders-09 */}
+
+      <ThemeContext.Provider value="dark">
+        <Button />
+      </ThemeContext.Provider>
 
     </div>
   );
