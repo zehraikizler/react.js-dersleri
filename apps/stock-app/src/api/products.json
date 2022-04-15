@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "productName": "İpsum Dolor",
+      "stock": 18
+    },
+    {
+      "id": 2,
+      "productName": "Consectetur Adipiscing",
+      "stock": 36
+    },
+    {
+      "id": 3,
+      "productName": "Sit Amet",
+      "stock": 41
+    },
+    {
+      "id": 4,
+      "productName": "Sed Do Eiusmod",
+      "stock": 97
+    },
+    {
+      "id": 5,
+      "productName": "Tempor İncididunt",
+      "stock": 46
+    },
+    {
+      "id": 6,
+      "productName": "Dolore Magna",
+      "stock": 13
+    },
+    {
+      "id": 7,
+      "productName": "Minim Veniam",
+      "stock": 11
+    },
+    {
+      "id": 8,
+      "productName": "Quis Nostrud",
+      "stock": 12
+    },
+    {
+      "id": 9,
+      "productName": "Exercitation Ullamco",
+      "stock": 74
+    },
+    {
+      "id": 10,
+      "productName": "Laboris Nisi",
+      "stock": 28
+    },
+    {
+      "id": 11,
+      "productName": "Commodo Consequat",
+      "stock": 83
+    },
+    {
+      "id": 12,
+      "productName": "Reprehenderit Amet",
+      "stock": 63
+    },
+    {
+      "id": 13,
+      "productName": "Voluptate Velit",
+      "stock": 51
+    },
+    {
+      "id": 14,
+      "productName": "Cillum Dolore",
+      "stock": 69
+    },
+    {
+      "id": 15,
+      "productName": "Fugiat Nulla",
+      "stock": 35
+    },
+    {
+      "id": 16,
+      "productName": "Occaecat Cupidatat",
+      "stock": 21
+    }
+  ]
